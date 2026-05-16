@@ -1,0 +1,29 @@
+
+
+
+## 3. Entity Framework
+Entity Framework is an Object Relational Mapper (ORM) that maps objects between the systam and a database. Entity frameworks takes database tables and turn them into objects. An object normally represents a one row in a database. 
+
+#### To install Entity Framework Run 
+```dotnet add package Microsoft.EntityFramework.SqlServer```
+
+```dotnet add package Microsoft.EntityFrameworkCore.Tools```
+
+```dotnet add package Microsoft.EntityFrameworkCore.Design```
+
+
+
+#### Migrations
+Install .NET CLI first by running the command:
+```dotnet tool install --global dotnet-ef```
+
+Check the installation 
+```dotnet ef```
+
+Run code to intialize a migration to database
+```dotnet ef migrations add InitialCreate```
+
+Create a database, table and schem by running the command
+```dotnet ef database update```
+
+A new folder called `Migrations` will be created out of this that contains the migration configurations.

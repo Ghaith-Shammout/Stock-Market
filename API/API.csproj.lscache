@@ -55,6 +55,10 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
+Data/ApplicationDBContext.cs
+Model/
+ Comment.cs
+ Stock.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  API.AssemblyInfo.cs
@@ -372,11 +376,37 @@ Program.cs
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
 <NUGET>/
+ azure.core/1.50.0/lib/net8.0/Azure.Core.dll
+ azure.identity/1.17.1/lib/net8.0/Azure.Identity.dll
+ entityframework/6.5.2/lib/netstandard2.1/
+  EntityFramework.dll
+  EntityFramework.SqlServer.dll
  microsoft.aspnetcore.openapi/10.0.8/lib/net10.0/Microsoft.AspNetCore.OpenApi.dll
+ microsoft.bcl.asyncinterfaces/8.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.data.sqlclient/6.1.4/ref/net9.0/Microsoft.Data.SqlClient.dll
+ microsoft.entityframework.sqlserver/6.5.2/lib/netstandard2.1/Microsoft.EntityFramework.SqlServer.dll
+ microsoft.identity.client.extensions.msal/4.78.0/lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+ microsoft.identity.client/4.80.0/lib/net8.0/Microsoft.Identity.Client.dll
+ microsoft.identitymodel.abstractions/8.14.0/lib/net9.0/Microsoft.IdentityModel.Abstractions.dll
+ microsoft.identitymodel.jsonwebtokens/7.7.1/lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+ microsoft.identitymodel.logging/7.7.1/lib/net8.0/Microsoft.IdentityModel.Logging.dll
+ microsoft.identitymodel.protocols.openidconnect/7.7.1/lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+ microsoft.identitymodel.protocols/7.7.1/lib/net8.0/Microsoft.IdentityModel.Protocols.dll
+ microsoft.identitymodel.tokens/7.7.1/lib/net8.0/Microsoft.IdentityModel.Tokens.dll
  microsoft.openapi/2.0.0/lib/net8.0/Microsoft.OpenApi.dll
+ microsoft.sqlserver.server/1.0.0/lib/netstandard2.0/Microsoft.SqlServer.Server.dll
+ microsoft.sqlserver.types/160.1000.6/lib/netstandard2.1/Microsoft.SqlServer.Types.dll
  scalar.aspnetcore/2.14.14/lib/net10.0/Scalar.AspNetCore.dll
  swashbuckle.aspnetcore.redoc/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.ReDoc.dll
  swashbuckle.aspnetcore.swaggerui/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+ system.clientmodel/1.8.0/lib/net9.0/System.ClientModel.dll
+ system.codedom/6.0.0/lib/net6.0/System.CodeDom.dll
+ system.configuration.configurationmanager/9.0.11/lib/net9.0/System.Configuration.ConfigurationManager.dll
+ system.data.sqlclient/4.8.6/ref/netcoreapp2.1/System.Data.SqlClient.dll
+ system.identitymodel.tokens.jwt/7.7.1/lib/net8.0/System.IdentityModel.Tokens.Jwt.dll
+ system.memory.data/8.0.1/lib/net8.0/System.Memory.Data.dll
+ system.security.cryptography.pkcs/9.0.11/lib/net9.0/System.Security.Cryptography.Pkcs.dll
+ system.security.cryptography.protecteddata/9.0.11/lib/net9.0/System.Security.Cryptography.ProtectedData.dll
 
 [analyzerReferences]
 <DOTNET>/packs/Microsoft.AspNetCore.App.Ref/10.0.8/analyzers/dotnet/cs/
@@ -404,7 +434,13 @@ Program.cs
 <DOTNET>/sdk/10.0.300/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/microsoft.aspnetcore.openapi/10.0.8/analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll
+<NUGET>/
+ microsoft.aspnetcore.openapi/10.0.8/analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll
+ microsoft.codeanalysis.analyzers/3.11.0/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.entityframeworkcore.analyzers/10.0.8/analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll
+ system.clientmodel/1.8.0/analyzers/dotnet/cs/System.ClientModel.SourceGeneration.dll
 
 [analyzerConfigFiles]
 <DOTNET>/sdk/10.0.300/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
